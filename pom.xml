@@ -114,15 +114,17 @@
                 <configuration>
                     <suiteXmlFiles>
                         <!--  <suiteXmlFile>src/tests/resources/testngcrossbrowser.xml</suiteXmlFile>-->
-                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+                        <suiteXmlFile>/Users/praveena/IdeaProjects/AllureTestNgCucumber/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
-                    <systemPropertyVariables>
-                        <browser>${browser}</browser>
-                        <url>${url}</url>
-                    </systemPropertyVariables>
-                    <includes>
-                        <include>**/runners/*.class</include>
-                    </includes>
+<!--                    <systemPropertyVariables>-->
+<!--                        <browser>chrome</browser>-->
+<!--                        <url>${url}</url>-->
+<!--                    </systemPropertyVariables>-->
+<!--                    <parallel>methods</parallel>-->
+<!--                    <threadCount>3</threadCount>-->
+<!--                    <includes>-->
+<!--                        <include>**/runners/*.class</include>-->
+<!--                    </includes>-->
                 </configuration>
             </plugin>
         </plugins>
