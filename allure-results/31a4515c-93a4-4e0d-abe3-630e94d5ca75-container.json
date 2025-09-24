@@ -1,0 +1,1 @@
+{"uuid":"31a4515c-93a4-4e0d-abe3-630e94d5ca75","name":"ChromeRun","children":[],"befores":[{"name":"defineBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758695139691,"stop":1758695139708}],"afters":[],"start":1758695139541,"stop":1758695145803}

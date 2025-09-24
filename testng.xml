@@ -1,0 +1,16 @@
+<suite name="CucumberParallelSuite" parallel="tests" thread-count="3">
+    <test name="ChromeRun">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="EdgeRun">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+</suite>
+<!--  testng.xml this name is allowed-->
