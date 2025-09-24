@@ -11,7 +11,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     credentialsId: 'jenkinsadmin',
-                    url: 'https://github.com/praveenap13/CucumberTestNgProject.git'
+                    url: 'https://github.com/praveenap13/AllureTestNgCucumber'
             }
         }
 
