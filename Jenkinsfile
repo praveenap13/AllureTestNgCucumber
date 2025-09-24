@@ -21,12 +21,22 @@ pipeline {
             }
         }
 
-        stage('Generate Allure Report') {
-            steps {
-              allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',
-              results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']]
-                    ])
-            }
-         }
+//         stage('Generate Allure Report') {
+//             steps {
+//               allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',
+//               results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']]
+//                     ])
+//             }
+//          }
+
      }
+
+     post {
+             always {
+                 allure([
+                     results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']], // Path to your Allure results directory
+                     reportBuildPolicy: 'ALWAYS' // Or other policies like 'UNSTABLE', 'FAILURE'
+                 ])
+             }
+         }
 }
