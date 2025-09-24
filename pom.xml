@@ -74,6 +74,11 @@
             <artifactId>allure-testng</artifactId>
             <version>2.29.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.24</version> <!-- Use the latest version -->
+        </dependency>
         <!-- Log4j2 -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
@@ -116,6 +121,9 @@
                         <!--  <suiteXmlFile>src/tests/resources/testngcrossbrowser.xml</suiteXmlFile>-->
                         <suiteXmlFile>/Users/praveena/IdeaProjects/AllureTestNgCucumber/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.x/aspectjweaver-1.9.x.jar"
+                    </argLine>
 <!--                    <systemPropertyVariables>-->
 <!--                        <browser>chrome</browser>-->
 <!--                        <url>${url}</url>-->
