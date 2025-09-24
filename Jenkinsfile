@@ -21,9 +21,9 @@ pipeline {
             }
         }
 
-        stage('Generate Allure Report'') {
+        stage('Generate Allure Report') {
             steps {
-              allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',,
+              allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',
               results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']]
             ]}
         }
