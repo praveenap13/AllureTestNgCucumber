@@ -21,12 +21,11 @@ pipeline {
             }
         }
 
-        stage('Publish Reports') {
+        stage('Generate Allure Report'') {
             steps {
-              allure includeProperties: false, jdk: '',
+              allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',,
               results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']]
-
-            }
+            ]}
         }
     }
 }
