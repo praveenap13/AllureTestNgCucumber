@@ -25,7 +25,7 @@ pipeline {
             steps {
               allure([includeProperties: false, reportBuildPolicy: 'ALWAYS',
               results: [[path: '/Users/praveena/IdeaProjects/AllureTestNgCucumber/allure-results']]
-            ]}
+            ])
         }
     }
 }
